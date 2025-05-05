@@ -1,0 +1,190 @@
+.social-connector-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.social-connector-container h2 {
+  color: #2a3990;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  margin-bottom: 25px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.platform-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.platform-card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #2a3990;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.platform-card.connected {
+  border-left: 4px solid #28a745;
+  background-color: rgba(40, 167, 69, 0.05);
+}
+
+.platform-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.platform-info {
+  flex: 1;
+}
+
+.platform-info h3 {
+  color: #2a3990;
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.platform-info p {
+  color: #6c757d;
+  margin: 0;
+  font-size: 14px;
+}
+
+.platform-action {
+  margin-left: 15px;
+}
+
+.btn-connect {
+  background-color: #2a3990;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-connect:hover:not(:disabled) {
+  background-color: #232e73;
+}
+
+.btn-connect:disabled {
+  background-color: #b4b4b4;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.connected-badge {
+  display: flex;
+  align-items: center;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.checkmark {
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.connection-summary {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.connection-summary p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #2a3990;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #2a3990;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #232e73;
+}
+
+.btn-primary:disabled {
+  background-color: #b4b4b4;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .platform-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .platform-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .platform-info {
+    margin-bottom: 15px;
+  }
+  
+  .platform-action {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .btn-connect {
+    width: 100%;
+  }
+  
+  .connected-badge {
+    justify-content: center;
+  }
+}

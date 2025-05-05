@@ -1,0 +1,450 @@
+.fan-profile-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.profile-header {
+  margin-bottom: 25px;
+}
+
+.profile-header h2 {
+  color: #2a3990;
+  margin-bottom: 15px;
+}
+
+.basic-user-info {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #2a3990;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info h3 {
+  color: #2a3990;
+  margin: 0 0 5px;
+}
+
+.user-info p {
+  color: #6c757d;
+  margin: 0;
+}
+
+.section-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  overflow-x: auto;
+}
+
+.section-tab {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #6c757d;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.section-tab:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+}
+
+.section-tab.active {
+  color: #2a3990;
+}
+
+.section-tab.active:after {
+  background-color: #2a3990;
+}
+
+.section-tab:hover:not(.active) {
+  color: #495057;
+}
+
+.profile-content {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.profile-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fan-level-badge {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.level-indicator {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.super-fan {
+  background-color: rgba(255, 215, 0, 0.2);
+  color: #ff8c00;
+}
+
+.dedicated-fan {
+  background-color: rgba(75, 0, 130, 0.1);
+  color: #6a0dad;
+}
+
+.regular-fan {
+  background-color: rgba(30, 144, 255, 0.1);
+  color: #1e90ff;
+}
+
+.casual-fan {
+  background-color: rgba(42, 57, 144, 0.1);
+  color: #2a3990;
+}
+
+.metrics-overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.metric-item {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2a3990;
+  margin-bottom: 5px;
+}
+
+.metric-label {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.profile-completion {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-completion h4 {
+  color: #2a3990;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.completion-bar-container {
+  height: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.completion-bar {
+  height: 100%;
+  background-color: #2a3990;
+  border-radius: 5px;
+}
+
+.verification-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #6c757d;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.verified {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.rejected {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.pending {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+/* Seção de preferências */
+.preferences-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.preferences-group {
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.preferences-group h4 {
+  color: #2a3990;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.preferences-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.preference-tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.game-tag {
+  background-color: rgba(255, 87, 51, 0.1);
+  color: #ff5733;
+}
+
+.team-tag {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+}
+
+.competition-tag {
+  background-color: rgba(155, 89, 182, 0.1);
+  color: #9b59b6;
+}
+
+.platform-tag {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.no-data {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.social-profiles-section,
+.esports-profiles-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-profiles-section h4,
+.esports-profiles-section h4 {
+  color: #2a3990;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.connected-profiles-list,
+.validated-profiles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.social-profile-card,
+.esports-profile-card {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.social-profile-card {
+  display: flex;
+  padding: 15px;
+}
+
+.social-platform-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #2a3990;
+  margin-right: 15px;
+}
+
+.social-profile-info {
+  flex: 1;
+}
+
+.social-profile-info h5 {
+  color: #2a3990;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.profile-username {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.esports-platform-header {
+  background-color: #2a3990;
+  color: white;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.esports-platform-header h5 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.validation-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.esports-profile-stats {
+  padding: 15px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-weight: bold;
+  color: #495057;
+}
+
+.stat-value {
+  color: #2a3990;
+}
+
+.no-profiles-message {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #2a3990;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #232e73;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .metrics-overview {
+    grid-template-columns: 1fr;
+  }
+  
+  .connected-profiles-list,
+  .validated-profiles-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-actions {
+    flex-direction: column;
+  }
+  
+  .section-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .section-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+}

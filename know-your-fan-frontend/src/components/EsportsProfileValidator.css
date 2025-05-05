@@ -1,0 +1,309 @@
+.esports-profile-validator-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.esports-profile-validator-container h2 {
+  color: #2a3990;
+  margin-bottom: 10px;
+}
+
+.esports-profile-validator-container h3 {
+  color: #2a3990;
+  margin: 20px 0 15px;
+  font-size: 18px;
+}
+
+.section-description {
+  margin-bottom: 25px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.supported-platforms {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.platform-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.platform-item {
+  background-color: white;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #2a3990;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.platform-name {
+  font-weight: bold;
+  color: #2a3990;
+  margin-bottom: 5px;
+}
+
+.platform-example {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.platform-example code {
+  background-color: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.validation-form {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.url-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.url-input:focus {
+  outline: none;
+  border-color: #2a3990;
+  box-shadow: 0 0 0 2px rgba(42, 57, 144, 0.2);
+}
+
+.url-input:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:disabled {
+  background-color: #b4b4b4;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.btn-primary {
+  background-color: #2a3990;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #232e73;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #5a6268;
+}
+
+.validation-result {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 2px solid;
+}
+
+.validation-result.success {
+  border-color: #28a745;
+  background-color: rgba(40, 167, 69, 0.05);
+}
+
+.validation-result.failure {
+  border-color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.05);
+}
+
+.result-summary {
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.validation-status {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.validation-status.valid {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.validation-status.invalid {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-weight: bold;
+  color: #495057;
+}
+
+.stat-value {
+  color: #2a3990;
+}
+
+.validated-profiles-section {
+  margin-bottom: 30px;
+}
+
+.validated-profiles-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.validated-profile-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 4px solid #2a3990;
+}
+
+.profile-platform {
+  font-weight: bold;
+  color: #2a3990;
+  width: 25%;
+}
+
+.profile-username {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.validation-date {
+  color: #6c757d;
+  font-size: 14px;
+  width: 25%;
+  text-align: right;
+}
+
+.no-profiles-message {
+  color: #6c757d;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.navigation-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.navigation-section .btn {
+  min-width: 200px;
+}
+
+.note {
+  margin-top: 15px;
+  color: #6c757d;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+  }
+  
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .validated-profile-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-platform,
+  .profile-username,
+  .validation-date {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .profile-platform {
+    margin-bottom: 8px;
+  }
+  
+  .validation-date {
+    margin-top: 8px;
+  }
+}
